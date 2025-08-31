@@ -1,0 +1,24 @@
+// wap a program to calculate the profit or loss.
+#include <stdio.h>
+
+int main() {
+    float cp,sp;
+    printf("entre the cp and sp");
+    scanf("%f%f",&cp,&sp);
+    if (cp>sp)
+    {
+        printf("loss");
+    }
+    else
+    {
+        printf("profit");
+    }
+    return 0;
+}
+
+
+
+entre the cp and sp2000 1000
+loss
+
+=== Code Execution Successful ===
