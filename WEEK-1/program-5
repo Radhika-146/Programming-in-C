@@ -1,0 +1,19 @@
+//wap to print all even number till 100. 
+#include <stdio.h>
+
+int main() {
+    int i=1;
+    while(i<=100)
+    {
+        if (i%2==0)
+        {
+            printf("%d is even",i);
+        }
+        i=i+1;
+    }
+    return 0;
+}
+
+2 is even4 is even6 is even8 is even10 is even12 is even14 is even16 is even18 is even20 is even22 is even24 is even26 is even28 is even30 is even32 is even34 is even36 is even38 is even40 is even42 is even44 is even46 is even48 is even50 is even52 is even54 is even56 is even58 is even60 is even62 is even64 is even66 is even68 is even70 is even72 is even74 is even76 is even78 is even80 is even82 is even84 is even86 is even88 is even90 is even92 is even94 is even96 is even98 is even100 is even
+
+=== Code Execution Successful ===
