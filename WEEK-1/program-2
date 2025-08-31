@@ -1,0 +1,23 @@
+// wap a program to check whether the person is eligible to vote or not..
+#include <stdio.h>
+
+int main() {
+    int age;
+    printf("entre the age");
+    scanf("%d",&age);
+    if (age>17)
+    {
+        printf("eligible");
+    }
+    else
+    {
+        printf(" not eligible");
+    }
+    return 0;
+}
+
+
+entre the age18
+eligible
+
+=== Code Execution Successful ===
