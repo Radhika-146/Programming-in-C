@@ -1,0 +1,16 @@
+// wap to print the reverse of number.
+#include <stdio.h>
+
+int main() {
+    int n1,d,sum=0;
+    printf("entre the number");
+    scanf("%d",n1);
+    while (n1>0)
+    {
+        int d=n1%10;
+        sum = sum*10+d;
+        int n1=n1/10;
+        printf("%d\n",d);
+    }
+    return 0;
+}
