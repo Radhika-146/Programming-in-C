@@ -1,1 +1,37 @@
+// rhombus star pattern
+#include <stdio.h>
 
+int main() {
+    int r,s;
+    printf("enter num of row and stars");
+    scanf("%d%d",&r,&s);
+        for (int i = 1; i<=r; i++) 
+        {
+           for (int j=1; j<i; j++)
+           {
+             printf(" ");
+           }
+           
+           for (int j=1; j<=s; j++)
+           {
+               printf("* ");
+           }
+           printf("\n");
+        }
+     return 0;
+ }
+
+
+output:
+enter num of row and stars8 7
+* * * * * * * 
+ * * * * * * * 
+  * * * * * * * 
+   * * * * * * * 
+    * * * * * * * 
+     * * * * * * * 
+      * * * * * * * 
+       * * * * * * * 
+
+
+=== Code Execution Successful ===
