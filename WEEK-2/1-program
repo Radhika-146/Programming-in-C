@@ -1,4 +1,4 @@
-//star pattern right half pyramid. 
+// star pattern right half pyramid. //
 #include <stdio.h>
 
 int main() {
