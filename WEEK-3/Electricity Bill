@@ -1,0 +1,32 @@
+//wap for electricity bill.
+#include <stdio.h>
+void bill();
+int main() 
+{
+    bill();
+    return 0;
+}
+ void bill()
+{
+    int n;
+    printf("Enter units:");
+    scanf("%d",&n);
+    float f_cost=0.0;
+    if(n<=100)
+    f_cost = (n*3)+50;
+    else if (n>100 && n<=300)
+    f_cost = 150+300+(n-100)*5;
+    else if (n>300 && n<=500)
+    f_cost = 250+300+1000+(n-300)*7;
+    else
+    f_cost =500+300+1000+1400+(n-500)*8;
+    printf("Electricity Bill = %f",f_cost);
+
+}
+
+
+output:
+Enter units:400
+Electricity Bill = 2250.000000
+
+=== Code Execution Successful ===
