@@ -1,0 +1,31 @@
+//SIZEOF OPERATOR
+#include <stdio.h>
+
+void main() {
+    //int
+    int a;
+    printf("enter the int type number");
+    scanf("%d",&a)
+    printf("%d", sizeof(a));
+    //float
+    int b;
+    printf("enter the float type number");
+    scanf("%f",&b);
+    printf("%f", sizeof(b));
+    //char
+    char c;
+    printf("enter character");
+    scanf("%c",&c);
+    printf("%c", sizeof(c));
+    //double
+    double d;
+    printf("enter the double type number");
+    scanf("%lf",&d);
+    printf("%lf", sizeof(d));
+    //long long
+    printf("enter the long long type number");
+    scanf("%ld",&e);
+    printf("%ld", sizeof(e));
+    
+    return 0;
+}
