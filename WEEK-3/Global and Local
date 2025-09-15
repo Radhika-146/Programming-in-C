@@ -1,0 +1,20 @@
+//Create a program where a global variable and a local variable have the same name Print their values inside 3 and outside the function to 
+show the difference.
+
+
+#include <stdio.h>
+int x = 100;
+
+void show()
+{
+    int x = 50;
+    printf("Inside function: %d", x);
+}
+
+int main()
+{
+    printf("%d\n", x);
+    show();
+    printf("%d\n", x);
+    return 0;
+}
