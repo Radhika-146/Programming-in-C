@@ -1,0 +1,19 @@
+//write a program that takes a character as input and print iits ASCII value.
+
+#include <stdio.h>
+int main()
+{
+     char a;
+     printf("enter the character: ");
+     scanf("%d",&a);
+     printf("ASCII value:%d",&a);
+    
+     return 0;
+}
+
+
+output:
+enter the character: a
+ASCII value:841207583
+
+=== Code Execution Successful ===
