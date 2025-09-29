@@ -1,0 +1,32 @@
+//Write a program to find the element that appears most frequently in the array.
+#include <stdio.h>
+int main() 
+{
+    int arr[100], n;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);  
+    }
+ 
+    int maxCount = 0, element = arr[0];
+
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+        for (int j = 0; j < n; j++) {
+            if (arr[j] == arr[i]) {
+                count++;
+            }
+        }
+        if (count > maxCount) 
+        {
+            maxCount = count;
+            element = arr[i];
+        }
+    }
+
+    printf("Most frequent element: %d",maxCount);
+    return 0;
+}
