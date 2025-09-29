@@ -1,0 +1,45 @@
+//Write a program to copy all elements of one array into another.
+#include <stdio.h>
+
+int main() 
+{
+    int arr1[100], n1;
+    printf("Enter size of array1: ");
+    scanf("%d", &n1);
+
+    int arr2[100], n2;
+    printf("Enter size of array2: ");
+    scanf("%d", &n2);
+
+    printf("Enter %d elements for array1: ", n1);
+    for (int i = 0; i < n1; i++) {
+        scanf("%d", &arr1[i]);
+    }
+
+    printf("Enter %d elements for array2: ", n2);
+    for (int i = 0; i < n2; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    printf("Common elements: ");
+    for (int i = 0; i < n1; i++) {
+        for (int j = 0; j < n2; j++) {
+            if (arr1[i] == arr2[j]) {
+                printf("%d ", arr1[i]);
+                break;  // stop checking once found
+            }
+        }
+    }
+
+    printf("\n");
+    return 0;
+}
+output:
+Enter size of array1: 5
+Enter size of array2: 6
+Enter 5 elements for array1: 4 5 2 1 4 
+Enter 6 elements for array2: 1 1 2 1 44 5 1
+Common elements: 2 1 
+
+=== Code Execution Successful ===
+
