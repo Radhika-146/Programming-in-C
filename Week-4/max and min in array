@@ -14,14 +14,14 @@ int main() {
        scanf("%d",&arr[i]);
    }
    
-   int max=0, min=0;
+   int max=arr[0], min=arr[0];
    for (int i=0; i<n; i++)
    {
-       if (max>arr[i])
+       if (arr[i]>max)
        {
            max=arr[i];
        }
-       if (min<arr[i])
+       if (arr[i]<min)
        {
            min=arr[i];
        }
@@ -32,14 +32,15 @@ int main() {
     return 0;
 }
 
-
 output:
-enter size of array4
-enter element45 21 
-85
-6
-max element of array is:0
-min element of array is:85
+enter size of array5
+enter element245
+612
+78
+2252
+445
+max element of array is:2252
+min element of array is:78
 
 
 === Code Execution Successful ===
